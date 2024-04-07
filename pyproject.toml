@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "expense-tracker"
+version = "0.1.0"
+description = ""
+authors = ["Raj <raj.achut@outlook.com>"]
+readme = "README.md"
+
+packages = [
+    { include = "app" },
+]
+
+[tool.poetry.scripts]
+start = "app.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-telegram-bot = "^21.0.1"
+google-api-python-client = "^2.124.0"
+google-auth-httplib2 = "^0.2.0"
+google-auth-oauthlib = "^1.2.0"
+python-dotenv = "^1.0.1"
+cachetools = "^5.3.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
