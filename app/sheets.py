@@ -76,6 +76,7 @@ def append(creds, data):
     raise err
 
 def get_category():
+  logger.info("Getting category and sub-category from sheets")
   return read(get_creds(), f"{DATA_SHEET_NAME}A1:B")
 
 def append_sheet(data):
