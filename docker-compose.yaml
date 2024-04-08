@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/code
+    command: poetry run start
+
+volumes:
+  poetry-cache:
